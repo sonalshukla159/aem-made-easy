@@ -234,6 +234,56 @@ footer {
   border-radius: 20px;
   margin: 40px 0;
 }
+.blog-container {
+  max-width: 950px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.blog-container h1 {
+  font-size: 52px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.blog-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 50px;
+}
+
+.blog-container h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+
+.blog-container p,
+.blog-container li {
+  color: #d1d5db;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.blog-container ul,
+.blog-container ol {
+  padding-left: 25px;
+  margin-top: 20px;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 20px;
+  margin: 50px 0;
+}
+
+pre {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
 
 
 @media (max-width: 768px) {
