@@ -2,21 +2,36 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Introduction to MCP in AEMaaCS</title>
+  <title>
+    Introduction to MCP in AEMaaCS
+  </title>
 
   <link rel="stylesheet" href="../style.css">
+
 </head>
 
 <body>
 
-  <div class="blog-container">
+<div class="blog-container">
+
+<h1>
+Introduction to MCP in AEMaaCS
+</h1>
+
+<p class="blog-subtitle">
+A beginner friendly guide to understanding MCP in Adobe Experience Manager Cloud Service.
+</p>
+
 
 <img src="images/01-mcp-in-aem-overview.png" class="blog-image">
 
-<h2>What is MCP?</h2>
+<h2>
+What is MCP in AEM?
+</h2>
 
 <p>
 MCP (Model Context Protocol) is an open protocol that allows AI applications
@@ -24,17 +39,253 @@ like Claude and Cursor to securely communicate with AEM as a Cloud Service.
 </p>
 
 <p>
-Adobe provides hosted MCP servers that expose AEM capabilities such as:
+Adobe provides hosted MCP servers which expose AEM capabilities
+through standardized tools.
+</p>
+
+
+<img src="images/02-what-is-mcp.png" class="blog-image">
+
+<h2>
+Why MCP Matters
+</h2>
+
+<p>
+MCP creates a bridge between AI tools and AEM.
+</p>
+
+<p>
+Instead of manually integrating every AI application with AEM APIs,
+developers can use MCP as a standard communication layer.
 </p>
 
 <ul>
-  <li>Reading content</li>
-  <li>Managing assets</li>
-  <li>Triggering workflows</li>
-  <li>Working with content fragments</li>
+<li>Secure communication</li>
+<li>OAuth authentication</li>
+<li>Tool discovery</li>
+<li>Content operations</li>
+<li>Workflow execution</li>
 </ul>
 
-  </div>
+
+<img src="images/03-how-it-works.png" class="blog-image">
+
+<h2>
+How MCP Works
+</h2>
+
+<p>
+The process is simple:
+</p>
+
+<ol>
+<li>User asks question in Claude or Cursor</li>
+<li>AI application connects to Adobe MCP server</li>
+<li>MCP server discovers available tools</li>
+<li>Tool executes operation in AEM</li>
+<li>Result is returned to user</li>
+</ol>
+
+
+<img src="images/04-adobe-hosted-mcp-servers.png" class="blog-image">
+
+<h2>
+Adobe Hosted MCP Servers
+</h2>
+
+<p>
+Adobe provides multiple MCP servers for different use cases.
+</p>
+
+<ul>
+<li><strong>Content Read Only</strong> → Retrieve content safely</li>
+<li><strong>Content Author</strong> → Create and update content</li>
+<li><strong>Workflow Server</strong> → Trigger workflows</li>
+</ul>
+
+<p>
+For beginners, it is recommended to start with the Read-Only server.
+</p>
+
+
+<img src="images/05-supported-mcp-applications.png" class="blog-image">
+
+<h2>
+Supported MCP Applications
+</h2>
+
+<p>
+MCP works with multiple AI applications:
+</p>
+
+<ul>
+<li>Claude</li>
+<li>Cursor</li>
+<li>Cline</li>
+<li>Other MCP clients</li>
+</ul>
+
+<p>
+This flexibility allows developers to integrate AI into development
+and enterprise workflows.
+</p>
+
+
+<img src="images/06-connect-mcp-server-in-claude.png" class="blog-image">
+
+<h2>
+How to Connect MCP Server in Claude
+</h2>
+
+<ol>
+<li>Open Claude Desktop</li>
+<li>Go to Settings</li>
+<li>Open Connectors section</li>
+<li>Add Custom Connector</li>
+<li>Enter Adobe MCP endpoint</li>
+<li>Authenticate with Adobe ID</li>
+<li>Start using MCP tools</li>
+</ol>
+
+
+<img src="images/07-example-using-mcp-in-claude.png" class="blog-image">
+
+<h2>
+Example Usage
+</h2>
+
+<p>
+Suppose you ask:
+</p>
+
+<pre>
+Show me the homepage title of WKND site.
+</pre>
+
+<p>
+Claude sends request to MCP server,
+which securely retrieves content from AEMaaCS.
+</p>
+
+<p>
+The result is then returned directly to the AI application.
+</p>
+
+
+<img src="images/08-high-level-architecture.png" class="blog-image">
+
+<h2>
+High-Level Architecture
+</h2>
+
+<p>
+The architecture mainly consists of:
+</p>
+
+<ul>
+<li>AI Applications</li>
+<li>MCP Protocol</li>
+<li>Adobe MCP Servers</li>
+<li>AEMaaCS</li>
+</ul>
+
+<p>
+This architecture is secure, scalable and cloud-native.
+</p>
+
+
+<img src="images/09-mcp-tools-examples.png" class="blog-image">
+
+<h2>
+Examples of MCP Tools
+</h2>
+
+<ul>
+<li>getPage()</li>
+<li>createPage()</li>
+<li>uploadAsset()</li>
+<li>createFragment()</li>
+<li>startWorkflow()</li>
+</ul>
+
+<p>
+These tools help AI applications perform meaningful operations in AEM.
+</p>
+
+
+<img src="images/10-authentication-security.png" class="blog-image">
+
+<h2>
+Authentication & Security
+</h2>
+
+<p>
+Adobe MCP servers use OAuth 2.0 authentication.
+</p>
+
+<p>
+Security features include:
+</p>
+
+<ul>
+<li>Adobe ID authentication</li>
+<li>Permission-based access</li>
+<li>Encrypted communication</li>
+<li>Enterprise-grade security</li>
+</ul>
+
+
+<img src="images/11-tips-for-great-experience.png" class="blog-image">
+
+<h2>
+Tips for Beginners
+</h2>
+
+<ul>
+<li>Start with Read-Only server</li>
+<li>Use clear prompts</li>
+<li>Explore available tools first</li>
+<li>Understand AEM permissions</li>
+<li>Test in non-production environments</li>
+</ul>
+
+
+<img src="images/12-learn-more.png" class="blog-image">
+
+<h2>
+Conclusion
+</h2>
+
+<p>
+MCP is an important step toward AI-powered enterprise content management.
+</p>
+
+<p>
+It allows AI applications to securely interact with AEMaaCS using
+standardized tools and protocols.
+</p>
+
+<p>
+As Adobe continues investing in AI integrations,
+understanding MCP early can provide a strong advantage for AEM developers.
+</p>
+
+<h2>
+Learn More
+</h2>
+
+<p>
+Official Adobe Documentation:
+</p>
+
+<p>
+<a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/ai-in-aem/mcp-support">
+Adobe MCP Documentation
+</a>
+</p>
+
+</div>
 
 </body>
+
 </html>
