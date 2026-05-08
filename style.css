@@ -193,6 +193,47 @@ footer {
   padding: 30px;
   color: #94a3b8;
 }
+.blog-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.blog-container h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.blog-subtitle {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-bottom: 40px;
+}
+
+.blog-container h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+
+.blog-container p,
+.blog-container li {
+  color: #d1d5db;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.blog-container ul {
+  margin-top: 20px;
+  padding-left: 25px;
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 20px;
+  margin: 40px 0;
+}
 
 
 @media (max-width: 768px) {
