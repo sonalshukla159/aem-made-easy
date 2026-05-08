@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111827;
+  color: white;
+}
+
+header {
+  background: #1f2937;
+  padding: 30px;
+  text-align: center;
+}
+
+.hero {
+  padding: 40px;
+  text-align: center;
+}
+
+.blogs {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.card a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f2937;
+}
